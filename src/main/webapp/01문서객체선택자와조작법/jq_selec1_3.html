@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 주제 : class 속성에 대한 값을 이용해서 HTML태그를 선택하는 class 선택자 기호 .을 이용한 예 -->
+<script src="https://code.jquery.com/jquery-Latest.min.js"></script>
+
+</head>
+<body>
+
+	<h1>제이쿼리</h1>
+	<h2 class="tit">선택자</h2>
+	<h3>직접선택자</h3>
+	
+	<script type="text/javascript">
+		$(".tit").css("background-color", "red").css("border", "2px dashed yellow");
+		//document.getElementsByClassName("tit")[0].style.backgroundColor = "red";
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+
+<body>
+<h1>인접관계선택자</h1>
+<ul id="wrap">
+	<li>리스트1
+			<ul>
+				<li id="List_1">리스트1-1</li>
+				<li>리스트1-2</li>
+			</ul>
+		</li>
+	<li>리스트2</li>
+	<li>리스트3</li>
+</ul>
+
+<script type="text/javascript">
+/*
+ 
+ 부모 요소 선택자 - parent() 메소드
+  $("요소선택")으로 선택한 자식 요소를 감싸고 이쓴ㄴ 바로 한단계 부모요소를 최종 선택하는 선택자.
+  작성문법
+  	$("자식요소선택자").parent();
+ 
+ id = List_1로 작성된 요소<li id="List_1">리스트1-1</li>를 먼저 선택 해 오고
+ .parent() 부모 요소 선택자 메소드를 호출하여 
+ $("#List_1")로 선택한 <li id="List_1">리스트1-1</li> 를 기준으로 감싸고 있는
+ 근거리에 작성된 <ul>...</ul> 요소를 최종 선택해 옵니다.
+ 
+ */
+ 
+ 
+ 
+ $("#List_1").parent().css("border", "2px dashed red");
+ 
+ 
+
+</script>
+
+</body>
+</html>

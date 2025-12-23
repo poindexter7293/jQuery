@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- 주제 : 종속 선택자 문법을 이용해 선택한 요소의 id 속성값에 대한 값 또는 class 속성에
+대한 값이 일치하는 요소를 최종선택 하는 예 -->
+</head>
+<body>
+<h1>나도 데려가줘</h1>
+<h1 class="tit">제이쿼리</h1>
+<h2 id="a">선택자</h2>
+<h2>선택자2</h2>
+<h3 class="tit">직접선택자</h3>
+
+<script type="text/javascript">
+
+	$("h1.tit").css("color", "yellow");
+	$("h2#a").css("color", "red");
+
+	//document.getElementsByTagName("h1")[1].style.color = "yellow";
+	//document.getElementsByTagName("h2")[0].style.color = "red";
+	
+	
+	/*
+		종속선택자 작성 문법
+			$("요소명.class속성값")
+			해석 : $("요소명") -> 작성한 요소명과 일치하는 모든 요소들을 한번에 선택 해 오는데
+			$("요소명.class속성값") -> $("요소명") 선택해 온 요소 중에서
+			class 속성값이 정확히 일치하는 요소들만 최종 선택해 옵니다.
+			
+			또는
+			
+			$("요소명#id속성값")
+			해석 : $("요소명") -> 작성한 요소명과 일치하는 모든 요소들을 한번에 선택 해 오는데
+			$("요소명#id속성값") -> $("요소명")으로 선택해 온 요소 중에서도 id속성에 대한 값이
+			정확히 일치하는 요소들만 최종 선택해 옵니다.
+	*/
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 주제 :    인접관계 선택자 종류 중에서  하위요소 선택자  " "  를 사용한 예  
+
+		
+	하위 요소 선택자   " "
+	- 기준요소선택1로 선택한 요소의  모든 하위요소(자식+후손)를 모둔 선택하는 
+	  " "빈공백(하위요소선택)을 말함
+	- 문법
+			$("기준요소선택1 선택할하위요소선택문법")	 
+	
+-->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>인접관계 선택자</h1>
+		<p>내용1</p>
+		<section>
+			<h1>하위 요소 선택자</h1>
+			<p>내용2</p>
+		</section>
+	</div>
+	<script>
+		//<div id="wrap"> 요소를 기준요소1로 먼저 선택해 오고
+		//<div id="wrap"> 요소를 기준으로 안쪽에 작성된 모든 하위요소를 선택할 때 ""하위요소 선택자를 사용하는데
+		//h1요소명 선택자를 이용해 인접한 <h1>인접관계선택자></h1>손자요소까지 모두 선택해 옴
+		$("#wrap h1").css({
+		"backgroundColor" : "yellow",
+		"border" : "2px solid red"
+		});
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+

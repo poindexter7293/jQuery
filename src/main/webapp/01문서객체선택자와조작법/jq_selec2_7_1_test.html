@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  
+  <script type="text/javascript">
+  	
+  	
+  	let elements = [];
+  
+  	for (let i = 0; i < 100; i++) {
+		elements.push("<div>This is element" + i + "</div>");
+	}
+  
+  	$.each(elements, function(index, element){
+  		
+          $("#container").append(element);	
+  	});
+  	
+  </script>
+</head>
+<body>
+ <!--
+       추가 버튼을 클릭했을때  100개의 <div>This is element 0 ~ 99 </div>요소를 
+       반복해서 만들어 아래의 <div id="container"></div> 사이에 동적으로 추가
+  -->
+	<button onclick="add();">추가</button>
+	
+	<div id="container"></div>
+	
+</body>
+</html>
+
+

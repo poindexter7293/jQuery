@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-Latest.min.js"></script>
+
+<script type="text/javascript">
+	//웹 브라우저창 (window 객체)이 HTML 문서 내부에 작성된 모든 HTML 태그들을 로딩했을 때
+	//이벤트 처리 함수 function(){}이 호출되어 실행되게 선언하자
+	//자바 스크립트 코드
+	//window.onlode = function(){ DOM을 선택해와 이벤트 등록 및 처리코드 작성};
+	//제이쿼리 코드
+	// $(function(){ DOM을 선택해와 이벤트 등록 및 처리코드 작성});
+	
+	$(function(){
+		/*1. id 속성에 설정된 아이디값이 tit인 <h2> 요소 한쌍을 선택해서 가져옴
+		  2. 그리고 css 메소드를 사용하여 선택한 <h2> 요소 영역의 배경색을 빨간색으로 설정
+		  3. 또한 css 메소드를 한번 더 사용하여 앞에서 선택한 <h2> 요소 영역의 바깥 테두리 선을 노란색 실선
+		  2px 굵기로 설정
+		*/
+		$("#tit").css("background-color", "red").css("border", "2px, solid yellow");
+		
+		
+	});
+</script>
+</head>
+<body>
+	<h1>제이쿼리</h1>
+	<h2 id="tit">선택자</h2>
+	<h3>직접선택자</h3>
+</body>
+</html>

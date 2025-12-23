@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<!-- 주제 : 요소명(태그명) 선택자와 그룹 선택자 ,를 사용한 예 -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<h1>제이쿼리</h1>
+<h1>제이쿼리2</h1>
+<h2>선택자</h2>
+<h3 id="3">직접선택자</h3>
+
+<script type="text/javascript">
+
+$("h1").css("color", "red");
+/*
+ 그룹선택자(다중선택자) , 기호를 이용하여 작성된 여러 HTML태그들을 한꺼번에 다중 선택해 올 수 있습니다.
+ 
+ 	작성문법
+ 		$("선택자 종류 1, 선택자 종류2, 선택자 종류3,...")
+ */
+ 
+ $("h2, #3").css("border", "2px dotted blue");
+ 
+ 
+</script>
+
+</body>
+</html>
